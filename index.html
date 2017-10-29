@@ -12,19 +12,38 @@
 		<div>
 			<h1><span>Awesome</span> Boilerplate</h1>
 			<p>
-				<label>Jump To Content</label><br>
-				<label>Jump To Footer</label><br>
-				<label>Jump To Kitties</label>
+    <!--    <a href=""><label> Jump To Content</label></a>
+        <a href="#footer"><label> Jump To Footer</label></a>
+        <a href="https://www.google.de/search?q=katzen&rlz=1C1GCEA_enDE766DE766&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjF6ar7jYfXAhUMWxoKHVO9BLIQ_AUICigB&biw=798&bih=740">
+        <label> Jump To Kitties</label>
+      </a> -->
+        <a href="#content"><input type="button" name="Content" value="Jump To Content"/></a>
+        <a href="#footer"><input type="button" name="Footer" value="Jump To Footer"/></a>
+        <a href="https://www.google.de/search?q=katzen&rlz=1C1GCEA_enDE766DE766&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjF6ar7jYfXAhUMWxoKHVO9BLIQ_AUICigB&biw=798&bih=740">
+        <input type="button" name="Kitties" value="Jump To Kitties"/>
+      </a>
 			</p>
 		</div>
 	</header>
-	<main>
+	<main id="content">
 		<section>
 			<article>
-			<!--ToDo Input Fields-->	
-			Input fields belongs here :)
+			<!--ToDo Input Fields-->
+		    Name: <input type="text" name="user" placeholder="Benutzername" ><br />
+        Vorname: <input type="text" name="user" placeholder="Benutzervorname"><br />
+        E-Mail: <input type="email" name="mail" placeholder="z.B. name@web.de"><br />
+        Telefon: <input type="tel" name="tel" placeholder="0621-12345"><br />
+        Geburtsdatum: <input type="date"><br />
 
-			</article>
+        Studiengang:
+        <select name="Studiengang" size="0">
+          <option value="UIB">UIB</option>
+          <option value="IB">IB</option>
+          <option value="IMB">IMB</option>
+        </select>
+        <br/>
+
+      </article>
 
 		</section>
 		<section>
@@ -62,15 +81,16 @@
 				</figure>
 				<h3>Follow Us</h3>
 				<p>
-					Falls du fragen hast, kannst du dich jederzeit an 
+					Falls du fragen hast, kannst du dich jederzeit an
 					<a href="https://git.com/CodeKittey">@Codekittey</a>, wenden oder eine
 					Email schreiben: m.kraus@hs-mannheim.de
 				</p>
 			</article>
 		</section>
 	</main>
-	<footer>
-		<img src="img/nodschool.svg"></a>
+	<footer id="footer" >
+    <img src="img/nodschool.svg"></a>
+    <p> Alle Informationen zum Autor, Hinweise zum Uhrheberrecht, ein Link zum Impressum </p>
 	</footer>
 	<script src="design/index.js"></script>
 </body>
